@@ -1,0 +1,23 @@
+<% include partials/header %>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg">
+        <form action="/posts" method="POST">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" name="post[title]" class="form-control" id="title" aria-describedby="postTitle" placeholder="Enter Post Title">
+          </div>
+          <div class="form-group">
+            <label for="image">Image</label>
+            <input type="text" name="post[image]" class="form-control" id="image" aria-describedby="postImage" placeholder="Enter Post Image">
+          </div>
+          <div class="form-group">
+            <label for="content">Content</label>
+            <input type="text" name="post[content]" class="form-control" id="content" aria-describedby="postContent" placeholder="Enter Post Content">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <% include partials/footer %>

@@ -1,0 +1,26 @@
+<% include partials/header %>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg">
+        <h1>Edit
+          <%= post.title %>
+        </h1>
+        <form action="/posts/<%= post._id %>?_method=PUT" method="POST">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" name="post[title]" class="form-control" id="title" aria-describedby="postTitle" value="<%= post.title %>">
+          </div>
+          <div class="form-group">
+            <label for="image">Image</label>
+            <input type="text" name="post[image]" class="form-control" id="image" aria-describedby="postImage" value="<%= post.image %>">
+          </div>
+          <div class="form-group">
+            <label for="content">Content</label>
+            <input type="text" name="post[content]" class="form-control" id="content" aria-describedby="postContent" value="<%= post.content %>">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <% include partials/footer %>
