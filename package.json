@@ -8,6 +8,7 @@
   "scripts": {
     "commit": "nps commit",
     "dev": "nps server.dev",
+    "now-start": "node --harmony index.js",
     "precommit": "lint-staged",
     "prettier": "prettier --single-quote --no-semi --write",
     "start": "nps"
@@ -18,10 +19,7 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "yarn prettier",
-      "git add"
-    ]
+    "*.js": ["yarn prettier", "git add"]
   },
   "dependencies": {
     "body-parser": "~1.17.2",

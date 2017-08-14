@@ -4,6 +4,10 @@ A simple blog.
 
 This project utilizes the latest JavaScript syntax available in NodeJS.
 
+[Live Demo](https://simple-blog-bccpqpmxki.now.sh)
+
+> Note: Deployment is not scaled and database is a free sandbox might take a while to fire up!
+
 ## Concepts Covered
 
 - [x] REST API Architecture.
